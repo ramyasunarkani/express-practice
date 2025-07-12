@@ -6,11 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    <form>
+    <h1>All products fetch</h1>
+    <form onsubmit="onSubmitHandler(event)">
         <label for="Product">Product Name:</label>
         <input type="text" id="Product" name="productName"/>
         <button type="submit">Add product</button>
     </form>
     
 </body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+<script src="/js/product.js"></script>
 </html>

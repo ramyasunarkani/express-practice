@@ -4,8 +4,11 @@ const server=express();
 const userRoutes=require('./routes/userRoutes')
 const productsRoutes=require('./routes/productRoutes') ;
 const cartRoutes=require('./routes/cartRoutes')
+
+server.use(express.static('public'))
+server.use(express.json());
 server.use('/users',userRoutes);
-server.use('/products',productsRoutes);
+server.use('/api/products',productsRoutes);
 server.use('/cart',cartRoutes);
 
 
